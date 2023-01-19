@@ -1,108 +1,383 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hounds Hotels
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Hounds Hotel mockup images](assets/.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+Hounds Hotel is a business created to for dog owners to have a safe and homely space for their furry family members to stay whilst they go away.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The main objective of the site is to provide the user with information on the services provided and enable them to make a booking.
 
-`python3 -m http.server`
+Visit the deployed website [here](https://.com).
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Table of Contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. [User Experience (UX)](#user-experience-ux)
+    1. [Strategy](#strategy)
+        1. [Project Goals](#project-goals)
+        2. [User Goals](#user-goals)
+        3. [Strategy Table](#strategy-table)
+    2. [Scope](#scope)
+        1. [User Stories](#user-stories)
+    3. [Structure](#structure)
+    4. [Skeleton](#skeleton)
+    5. [Surface](#surface)
+2. [Features](#features)
+    1. [General](#general)
+    2. [Home Page](#home-page)
+    3. [About Page](#about-page)
+    4. [Search Results Page](#search-results-page)
+    5. [Question Detail Page](#question-detail-page)
+    6. [Ask Question Page](#ask-question-page)
+    7. [Leave Reply Page](#leave-reply-page)
+    8. [Edit Question Page](#edit-question-page)
+    9. [Delete Question Page](#delete-question-page)
+    10. [Edit Reply Page](#edit-reply-page)
+    11. [Delete Reply Page](#delete-reply-page)
+    12. [Authentication Pages](#authentication-pages)
+3. [Technologies Used](#technologies-used)
+    1. [Languages Used](#languages-used)
+    2. [Libraries and Frameworks](#languages-and-frameworks)
+    3. [Packages / Dependecies Installed](#packages--dependecies-installed)
+    4. [Database Management](#database-management)
+    5. [Tools and Programs](#tools-and-programs)
+4. [Testing](#testing)
+    1. [Go to TESTING.md](https://github.com/josswe26/c/blob/main/TESTING.md#-testing)
+5. [Deployment](#deployment)
+6. [Finished Product](#finished-product)
+7. [Credits](#credits)
+8. [Known Bugs](#known-bugs)
+9. [Acknowledgements](#acknowledgements)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+***
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## User Experience (UX)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Strategy
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Project Goals
 
-------
+* The website contains simple colors for a modern design and also to not draw attention from the content.
 
-## Release History
+* Responsive design to make the website accessible on different screen sizes.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Structure is easy to understand and navigates effortlessly.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Site users are able to open an account in order to make a booking.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Site users are able to create an account and make a booking.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### User Goals
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* As a Site Admin,  .................
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* As a Site User, I want to be able to interact with the content.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* As a Site User, I want the information to be easy to find and read.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* As a Dog Parent, I want to be able to create an account.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* As a Dog Parent, I want to be able to Sign in using User Name & Password.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* As a Dog Parent, I can update my account information.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* As a Dog Parent, I want the information to be easy to find and read.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* As a Dog Parent, I want to be able to make a booking for my dog.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Strategy Table
 
-------
+Opportunity / Problem   Importance  Viability / Feasibility
+--- | --- | ---
+Responsive design   | 5 | 5
+Account Creation    | 5 | 5
+Ability to sign-in  | 5 | 5
+Create, edit and delete personal info | 5 |4
+Create, edit and delete booking | 5 | 4
+Ability to search for information | 5 | 3
+Social Media Icons | 3 | 5
+        
+**Total** | **33**  |  **28**
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Scope
 
-**How will this affect me?**
+According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases. The first phase will include the features that have been identified in order to build the minimum viable product.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+**First Phase**
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Responsive design
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Menu 
 
-**So….?**
+* Account registration
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Booking Form
 
-**Can I opt out?**
+* 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+**Second Phase**
 
-**Anything more?**
+* Ability to add reviews 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* Social media signup
 
----
+* Extra Services, Grooming, extra playtime, Treats, Massages
 
-Happy coding!
+
+#### User Stories
+
+GitHub projects was used as my project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project progress.
+
+**Start**
+![User Stories Progress - Start](assets/)
+
+**Week 1**
+![User Stories Progress - Week 1](assets/)
+
+**Week 2**
+![User Stories Progress - Week 2](assets/)
+
+**Week 3**
+![User Stories Progress - Week 3](assets/)
+
+
+### Structure
+
+The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
+
+![website map](assets/)
+
+* Header, footer and navigation bar are consistent through all pages.
+
+* Links and forms provide clear feedback to the site user.
+
+* The opportunity to add additional content to the website is provided for the site user once they register an account.
+
+* A 404-error page is available.
+
+
+#### Database Model
+
+The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using [PostgreSQL](https://www.postgresql.org/).
+
+![website map](assets/)
+
+**Question Model**
+
+
+
+**Reply Model**
+
+* 
+
+
+
+
+### Skeleton
+
+#### Wireframes
+
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+
+Page | Desktop Version | Mobile Version
+--- | --- | ---
+Index / User Logged Out | ![Desktop index / user logged out wireframe image](assets/) | ![Mobile index / user logged out wireframe image](assets/wireframes/)
+Sign Up | ![Desktop sign up wireframe image](assets/wireframes/signup_dektop.png) | ![Mobile sign up wireframe image](assets/wireframes/signup_mobile.png)
+Log In | ![Desktop log in wireframe image](assets/wireframes/login_dektop.png) | ![Mobile log in wireframe image](assets/wireframes/login_mobile.png)
+Index / User Logged In | ![Desktop index / user logged in wireframe image](assets/wireframes/index_dektop_logged_in.png) | ![Mobile index / user logged out wireframe image](assets/wireframes/index_mobile_logged_in.png)
+Ask Question | ![Desktop ask question wireframe image](assets/wireframes/ask_question_desktop.png) | ![Mobile ask question wireframe image](assets/wireframes/ask_question_mobile.png)
+Open Question | ![Desktop open question wireframe image](assets/wireframes/question_dektop.png) | ![Mobile open question wireframe image](assets/wireframes/question_mobile.png)
+Leave Reply | ![Desktop leave reply wireframe image](assets/wireframes/leave_reply_desktop.png) | ![Mobile leave reply wireframe image](assets/wireframes/leave_reply_mobile.png)
+
+
+### Surface
+
+#### Color Scheme
+
+![Color scheme image](assets/)
+
+The colors used in the website are a middle red (#CA8471) for secondary buttons, navbar links, as well as for main buttons and links transitions. Charcoal (#253A47) is used for the main text, footer background, main buttons and secondary buttons and links transitions.
+
+A brown sugar (#C37046) for the navigation bar and card footers background, footer and buttons content. A Thistle color (#E3C7E9) is also used in the main background and cards footer as well as for input fields.
+
+The colors are were chosen keeping in mind simplicity but also providing the website a modern design. This in order to keep the focus on the content but also appealing for the users.
+
+
+#### Typography
+
+The main font being used in the site is Nunito, with sans-serif as a fallback in case Nunito doesn't get imported correctly. Roboto, with sans-serif as a fallback is used mainly for headings and the logo has been given the Quicksand font, with sans-serif as a fallback.
+
+Nunito and Roboto were chosen after some research on fonts that are better for reading. Specially Nunito which has been used as main font. Quicksand was used for the logo for design purposes.
+
+[Back to top ⇧](#hounds-hotel)
+
+
+## Features
+
+### General
+
+* The website has been designed from a mobile first perspective.
+
+* Responsive design across all device sizes.
+
+* Navigation Bar
+![ Navigation Bar image](assets/readme_files/_navbar.png)
+
+    *  Contains the main logo and section links.
+
+    * The navigation bar contains links to all sections to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the Site User for a better user experience.
+
+* Search bar
+![Search Bar image](assets/readme_files/search_bar.png)
+
+    * Provide the Site User an input field and a Search button to be able to search for specific questions.
+
+* Footer
+  ![ Footer image](assets/readme_files/_footer.png)
+
+    * The footer includes a logo and link to social media channels.
+
+
+### Home Page
+
+* Question list
+
+
+
+### About Page
+
+![CAbout Page image](assets/readme_files/_about.png)
+
+* Provide relevant information about the website's objective.
+
+
+### Search Results Page
+![ About Page image](assets/readme_files/_search_results.png)
+
+* Display information about the Search being handled
+
+* Display a paginated list of the questions matching the search and its relevant information for the user to identify.
+
+
+### Question Detail Page
+![ Question Detail Page image](assets/readme_files/_question_detail.png)
+
+* Display the full question a well as a list of its replies.
+
+* Question and reply scores as well as voting possibilities for registered users is provided next to each item.
+
+* For registered users, a Leave Reply button is provided to allow the user to access the Leave Reply page to create a new reply to the question.
+
+ * Edit and Question buttons are provided for the questions and replies the registered Site User has created.
+
+
+### Ask Question Page
+![ Ask Question Page](assets/readme_files/ask_question.png)
+
+* Provide a form to allow registered Site Users to create a new question.
+
+### Leave Reply Page
+![Leave Reply Page](assets/readme_files/_leave_reply.png)
+
+* Provide a form to allow registered Site Users to create a new reply to the questions.
+
+
+### Edit Question Page
+![ Edit Question Page](assets/readme_files/cedit_question.png)
+
+* Provide a prepopulated form to allow the Site User to edit a question they created.
+
+
+### Delete Question Page
+![ Edit Question Page](assets/readme_files/cdelete_question.png)
+
+* Provide a form to allow the Site User to delete a question they created.
+
+
+### Edit Reply Page
+![ Edit Question Page](assets/readme_files/_edit_reply.png)
+
+* Provide a prepopulated form to allow the Site User to edit a reply they created.
+
+
+### Delete Reply Page
+![ Edit Question Page](assets/readme_files/delete_reply.png)
+
+* Provide a form to allow the Site User to delete a reply they created.
+
+
+### Authentication Pages
+
+Page | Purpose | Image |
+--- | --- | --- |
+Register | Allow the Site User to sign up an account for the website. | ![ Sign Up Page](assets/readme_files/co_sing_up.png) |
+Login | Allow the Site User to sign in with their account. | ![ Sign In Page](assets/readme_files/_sign_in.png) |
+Logout | Allow the Site User to sign out from their account. | ![ Sign Out Page](assets/readgn_out.png) |
+
+
+[Back to top ⇧](#hounds-hotel)
+
+
+## Technologies Used
+
+### Languages Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+
+### Libraries and Frameworks
+
+* [Django](https://www.djangoproject.com/)   
+    * Django was used as web framework.
+
+* [Django Template](https://jinja.palletsprojects.com)  
+    * Django Template was used as a templating language for Django to display backend data to HTML.
+   
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)  
+    * Bootstrap 5 was used throughout the website to help with styling and responsiveness.
+
+* [Google Fonts](https://fonts.google.com)  
+    * Google fonts was used to import the fonts into the html file, and were used on all parts of the site.
+
+* [Font Awesome](https://fontawesome.com)  
+    * Font Awesome was used throughout the website to add icons for aesthetic and UX purposes. 
+
+* [jQuery 3.6.0](https://jquery.com/)  
+    * jQuery was used as a JavaScript library to help writing less JavaScript code.  
+
+
+### Packages / Dependecies Installed
+
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)  
+    * Django Allauth was used for user authentication, registration, and account management.
+
+* [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/)   
+    * Django Crispy Form was used to control the rendering of the forms. 
+ 
+* [Gunicorn](https://gunicorn.org/)  
+    * Gunicorn was used as Python WSGI HTTP Server for UNIX to support the deployment of Django application.  
+
+* [Summernote](https://summernote.org/) 
+    * Summernote has been used as WYSIWYG editor.
+
+* [Cloudinary](https://cloudinary.com/)
+    * Cloudinary has been used as image management solution
+
+### Database Management
+* [Heroku Postgres](https://www.heroku.com/postgres)   
+    * Heroku Postgres database was used in production, as a service based on PostgreSQL provided by Heroku.
+
+
+
