@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'project',
     'hounds',
 ]
 
@@ -59,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'hounds-p4.wsgi.application'
 
 
 # Database
