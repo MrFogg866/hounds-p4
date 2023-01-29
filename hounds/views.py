@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from django.core.mail import EmailMessage
 from django.conf import settings
+from django.contrib import messages
 
 class HomeTemplateView(TemplateView):
     template_name = "index.html"
@@ -23,4 +24,11 @@ class HomeTemplateView(TemplateView):
         return HttpResponse("Email sent successfully")
 
 class AppointmemntTemplateView(TemplateView):
-    template_name = "index.html"        
+    template_name = "appointment.html"    
+
+    def post(self, request):
+        fname = request.POST.get("fname")   
+        lname = request.POST.get("lname")
+        email = request.POST.get("email")
+        mobile = request.POST.get("mobile")
+        message = request.POST.get("request")
