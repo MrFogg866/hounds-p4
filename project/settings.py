@@ -58,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'hounds-p4.wsgi.application'
+WSGI_APPLICATION = 'project.wsgi.application'
 
 
 # Database
