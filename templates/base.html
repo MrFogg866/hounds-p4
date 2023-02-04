@@ -19,9 +19,9 @@
 </style>
 <body>
 
-  <div class="header" style="
-  background: rgb(177, 177, 177) url('../static/img/hero.jpeg') no-repeat fixed center
-  {% if "appointment" in request.path %}
+  <div class="header" 
+  style="background: url('img/hero.jpeg') no-repeat; background-size: cover;"
+  {% if 'appointment' in request.path %}
   max-height:300px!important;min-height:300px!important;
   {% endif %}
   ">
