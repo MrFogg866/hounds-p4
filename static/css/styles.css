@@ -4,9 +4,8 @@
 
 .header {
     background: url("img/hero.jpeg") no-repeat fixed center; 
-    background-size:cover;
+    background-size: cover;
     min-height: 1000px;
-    
     font-family:'Source Sans Pro', sans-serif;
   }
   
@@ -224,6 +223,16 @@
   }
   
   /*############
+  SERVICE
+##############*/
+
+  .color-green {
+    background-color: #b49e5c;
+    }
+
+
+
+  /*############
   TESTIMONIALS
 ##############*/
 
@@ -289,12 +298,14 @@
   .carousel .carousel-indicators {
     bottom: 15px;
   }
-  .carousel-indicators li, .carousel-indicators li.active {
-    width: 11px;
-    height: 11px;
+
+  /*.carousel-indicators li, .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
     margin: 1px 5px;
     border-radius: 50%;
-  }
+  } */
+
   .carousel-indicators li {	
     background: #e2e2e2;
     border: none;
@@ -384,6 +395,10 @@
     box-shadow: 1px 5px 9px rgba(241, 96, 1, 0.32);
   }
   
+  .text-green {
+    color: #b49e5c;
+    }
+
 /*======= Responsive ======*/
 @media (min-width: 768px) {
     .nav-custom-left {
