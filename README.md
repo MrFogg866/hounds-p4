@@ -1,7 +1,7 @@
 # Hounds Hotels
 
 
-![Hounds Hotel mockup images](assets/.jpg)
+![Hounds Hotel](static/img/home%20.png)
 
 
 Hounds Hotel is a business created to for dog owners to have a safe and homely space for their furry family members to stay whilst they go away.
@@ -27,14 +27,6 @@ Visit the deployed website [here](https://.com).
     1. [General](#general)
     2. [Home Page](#home-page)
     3. [About Page](#about-page)
-    4. [Search Results Page](#search-results-page)
-    5. [Question Detail Page](#question-detail-page)
-    6. [Ask Question Page](#ask-question-page)
-    7. [Leave Reply Page](#leave-reply-page)
-    8. [Edit Question Page](#edit-question-page)
-    9. [Delete Question Page](#delete-question-page)
-    10. [Edit Reply Page](#edit-reply-page)
-    11. [Delete Reply Page](#delete-reply-page)
     12. [Authentication Pages](#authentication-pages)
 3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
@@ -43,7 +35,7 @@ Visit the deployed website [here](https://.com).
     4. [Database Management](#database-management)
     5. [Tools and Programs](#tools-and-programs)
 4. [Testing](#testing)
-    1. [Go to TESTING.md](https://github.com/josswe26/c/blob/main/TESTING.md#-testing)
+    1. [Go to TESTING.md](https://-testing)
 5. [Deployment](#deployment)
 6. [Finished Product](#finished-product)
 7. [Credits](#credits)
@@ -190,33 +182,30 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
-Index / User Logged Out | ![Desktop index / user logged out wireframe image](assets/) | ![Mobile index / user logged out wireframe image](assets/wireframes/)
-Sign Up | ![Desktop sign up wireframe image](assets/wireframes/signup_dektop.png) | ![Mobile sign up wireframe image](assets/wireframes/signup_mobile.png)
-Log In | ![Desktop log in wireframe image](assets/wireframes/login_dektop.png) | ![Mobile log in wireframe image](assets/wireframes/login_mobile.png)
-Index / User Logged In | ![Desktop index / user logged in wireframe image](assets/wireframes/index_dektop_logged_in.png) | ![Mobile index / user logged out wireframe image](assets/wireframes/index_mobile_logged_in.png)
-Ask Question | ![Desktop ask question wireframe image](assets/wireframes/ask_question_desktop.png) | ![Mobile ask question wireframe image](assets/wireframes/ask_question_mobile.png)
-Open Question | ![Desktop open question wireframe image](assets/wireframes/question_dektop.png) | ![Mobile open question wireframe image](assets/wireframes/question_mobile.png)
-Leave Reply | ![Desktop leave reply wireframe image](assets/wireframes/leave_reply_desktop.png) | ![Mobile leave reply wireframe image](assets/wireframes/leave_reply_mobile.png)
+Home Page | ![Desktop Home](static/img/WF-1.png) | ![Mobile Home](assets//)
+Our Team | ![Desktop Team](static/img/WF-2.png) | ![Mobile Team](assets/)
+Services| ![Desktop Services](static/img/WF-3.png) | ![Mobile Services](assets)
+Testimonies | ![Desktop Testimonies](static/img/WF-4.png) | ![Mobile Testimonies](assets)
+Contact Us | ![Desktop Contact Us](static/img/WF-5.png) | ![Mobile ](as)
+Open Question | ![Desktop ](assets/wirefra) | ![Mobile opee](assets/wirefrang)
+Leave Reply | ![Desktop leae](assets/wirefrg) | ![Mobile leavage](assets/wobile.png)
 
 
 ### Surface
 
 #### Color Scheme
 
-![Color scheme image](assets/)
+![Color scheme image](static/img/color-pallette.png)
 
-The colors used in the website are a middle red (#CA8471) for secondary buttons, navbar links, as well as for main buttons and links transitions. Charcoal (#253A47) is used for the main text, footer background, main buttons and secondary buttons and links transitions.
-
-A brown sugar (#C37046) for the navigation bar and card footers background, footer and buttons content. A Thistle color (#E3C7E9) is also used in the main background and cards footer as well as for input fields.
+The colors used in the website are  Ecru (#B49E5C) for Service banner, send email button, social media icons & in the Booking form.   Silver Chalice (#AAAAAA) & Black (#000000) are  used for the main text, with White (#FFFFFF) asthe background
 
 The colors are were chosen keeping in mind simplicity but also providing the website a modern design. This in order to keep the focus on the content but also appealing for the users.
 
-
 #### Typography
 
-The main font being used in the site is Nunito, with sans-serif as a fallback in case Nunito doesn't get imported correctly. Roboto, with sans-serif as a fallback is used mainly for headings and the logo has been given the Quicksand font, with sans-serif as a fallback.
+The main font being used in the site is Source Sans Pro , with sans-serif as a fallback in case Source Sans Pro doesn't get imported correctly. 
 
-Nunito and Roboto were chosen after some research on fonts that are better for reading. Specially Nunito which has been used as main font. Quicksand was used for the logo for design purposes.
+Source Sans Pro  was chosen after some research on fonts that are better for reading. 
 
 [Back to top ⇧](#hounds-hotel)
 
@@ -236,15 +225,12 @@ Nunito and Roboto were chosen after some research on fonts that are better for r
 
     * The navigation bar contains links to all sections to facilitate navigation across the site. It also has a hover effect that changes color to provide feedback to the Site User for a better user experience.
 
-* Search bar
-![Search Bar image](assets/readme_files/search_bar.png)
 
-    * Provide the Site User an input field and a Search button to be able to search for specific questions.
 
-* Footer
-  ![ Footer image](assets/readme_files/_footer.png)
+* Social Media Links
+  ![Social](static/img/social.png)
 
-    * The footer includes a logo and link to social media channels.
+    * The Contact Us section contain icons with embedded links to the social media sites
 
 
 ### Home Page
@@ -253,66 +239,40 @@ Nunito and Roboto were chosen after some research on fonts that are better for r
 
 
 
-### About Page
+### Our Team
 
-![CAbout Page image](assets/readme_files/_about.png)
+![team](static/img/team.png)
 
-* Provide relevant information about the website's objective.
-
-
-### Search Results Page
-![ About Page image](assets/readme_files/_search_results.png)
-
-* Display information about the Search being handled
-
-* Display a paginated list of the questions matching the search and its relevant information for the user to identify.
+* Provide images, names & titles of our team.
 
 
-### Question Detail Page
-![ Question Detail Page image](assets/readme_files/_question_detail.png)
+### Services 
+![Services](static/img/services.png)
 
-* Display the full question a well as a list of its replies.
+* Display information about the Services on offer.
 
-* Question and reply scores as well as voting possibilities for registered users is provided next to each item.
-
-* For registered users, a Leave Reply button is provided to allow the user to access the Leave Reply page to create a new reply to the question.
-
- * Edit and Question buttons are provided for the questions and replies the registered Site User has created.
+* Display images and short description.
 
 
-### Ask Question Page
-![ Ask Question Page](assets/readme_files/ask_question.png)
+### Testimonial
+![Testimonies](static/img/testimonies.png)
 
-* Provide a form to allow registered Site Users to create a new question.
+* A image carosel
 
-### Leave Reply Page
-![Leave Reply Page](assets/readme_files/_leave_reply.png)
+* 3 images of clients
 
-* Provide a form to allow registered Site Users to create a new reply to the questions.
+* with a breif review and there name
 
+### Contact Us
+![contact us ](static/img/contact.png)
 
-### Edit Question Page
-![ Edit Question Page](assets/readme_files/cedit_question.png)
+* Here is the business address, google map, social media links & send email form.
 
-* Provide a prepopulated form to allow the Site User to edit a question they created.
+### Manage
+![Leave Reply Page](static/img/manage.png)
 
+* Allows the site admin to accept the booking
 
-### Delete Question Page
-![ Edit Question Page](assets/readme_files/cdelete_question.png)
-
-* Provide a form to allow the Site User to delete a question they created.
-
-
-### Edit Reply Page
-![ Edit Question Page](assets/readme_files/_edit_reply.png)
-
-* Provide a prepopulated form to allow the Site User to edit a reply they created.
-
-
-### Delete Reply Page
-![ Edit Question Page](assets/readme_files/delete_reply.png)
-
-* Provide a form to allow the Site User to delete a reply they created.
 
 
 ### Authentication Pages

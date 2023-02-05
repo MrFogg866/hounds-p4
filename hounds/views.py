@@ -45,8 +45,6 @@ class AppointmentTemplateView(TemplateView):
         appointment = Appointment.objects.create(
             first_name=fname,
             last_name=lname,
-            breed=breed,
-            alergies=alergies,
             email=email,
             phone=mobile,
             request=message,
@@ -54,8 +52,9 @@ class AppointmentTemplateView(TemplateView):
 
         appointment.save()
 
-        messages.add_message(request, messages.SUCCESS, f"Thanks {fname} for making an booking request, we will email you ASAP!")
+        messages.add_message(request, messages.SUCCESS, f"Thanks {fname} for making an appointment, we will email you ASAP!")
         return HttpResponseRedirect(request.path)
+
 
 class ManageAppointmentTemplateView(ListView):
     template_name = "manage-appointments.html"
