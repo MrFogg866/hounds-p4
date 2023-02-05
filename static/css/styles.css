@@ -5,13 +5,12 @@
 .header {
     background: url("img/hero.jpeg") no-repeat fixed center; 
     background-size: cover;
-    min-height: 1000px;
     font-family:'Source Sans Pro', sans-serif;
   }
   
   @media (min-width:768px) {
     .header {
-      padding-bottom:120px;
+      padding-bottom:140px;
     }
   }
   
