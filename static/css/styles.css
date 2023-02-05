@@ -3,31 +3,33 @@
 ##############*/
 
 .header {
-    background: url("img/hero.jpeg") no-repeat fixed center; 
+    background: url("./img/hero.jpeg") no-repeat fixed center; 
     background-size: cover;
     font-family:'Source Sans Pro', sans-serif;
   }
 
   .margin-header  {
     margin-top: 400px;
-    text-align: center;
   }
   
   @media (min-width:768px) {
     .header {
       padding-bottom: 100px;
+      text-align: center;
     }
   }
 
   @media (min-width: 576px) { 
     .header {
       padding-bottom: 100px;
+      text-align: center;
     }
   }
 
   @media (max-width: 767.98px) {
     .header{
       padding-bottom: 50px;
+      text-align: center;
     }
   }
 
@@ -263,8 +265,8 @@
     color: #eb7245;
   }
   .carousel .img-box {
-    width: 145px;
-    height: 145px;
+    width: 350px;
+    height: 350px;
     margin: 0 auto;
     border-radius: 50%;
   }
@@ -279,7 +281,6 @@
   }
   .carousel .overview {	
     text-align: center;
-    padding-bottom: 5px;
   }
   .carousel .overview b {
     color: #333;
@@ -315,19 +316,19 @@
     bottom: 15px;
   }
 
-  /*.carousel-indicators li, .carousel-indicators li.active {
-    width: 20px;
-    height: 20px;
-    margin: 1px 5px;
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-  } */
-
-  .carousel-indicators li {	
-    background: #e2e2e2;
-    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #e2e2e2;
   }
-  .carousel-indicators li.active {		
-    background: #888;		
+  
+  .carousel-indicators li.active {
+    background-color: #888;
   }
 
  /*############
@@ -414,6 +415,11 @@
   .text-green {
     color: #b49e5c;
     }
+
+  .text-green:hover {
+    color: #83754b;
+
+  } 
 
 /*======= Responsive ======*/
 @media (min-width: 768px) {

@@ -20,7 +20,7 @@ class HomeTemplateView(TemplateView):
         message = request.POST.get("message")
 
         email = EmailMessage(
-            subject= f"{name} from doctor family.",
+            subject= f"{name} from Hounds Hotel.",
             body=message,
             from_email=settings.EMAIL_HOST_USER,
             to=[settings.EMAIL_HOST_USER],
@@ -36,6 +36,8 @@ class AppointmentTemplateView(TemplateView):
     def post(self, request):
         fname = request.POST.get("fname")
         lname = request.POST.get("fname")
+        breed = request.POST.get("breed")
+        alergies = request.POST.get("alergies")
         email = request.POST.get("email")
         mobile = request.POST.get("mobile")
         message = request.POST.get("request")
@@ -43,6 +45,8 @@ class AppointmentTemplateView(TemplateView):
         appointment = Appointment.objects.create(
             first_name=fname,
             last_name=lname,
+            breed=breed,
+            alergies=alergies,
             email=email,
             phone=mobile,
             request=message,
@@ -50,7 +54,7 @@ class AppointmentTemplateView(TemplateView):
 
         appointment.save()
 
-        messages.add_message(request, messages.SUCCESS, f"Thanks {fname} for making an appointment, we will email you ASAP!")
+        messages.add_message(request, messages.SUCCESS, f"Thanks {fname} for making an booking request, we will email you ASAP!")
         return HttpResponseRedirect(request.path)
 
 class ManageAppointmentTemplateView(ListView):
@@ -76,7 +80,7 @@ class ManageAppointmentTemplateView(ListView):
 
         message = get_template('email.html').render(data)
         email = EmailMessage(
-            "About your appointment",
+            "About your reservation request at Hounds Hotel",
             message,
             settings.EMAIL_HOST_USER,
             [appointment.email],

@@ -15,16 +15,21 @@
 </head>
 
 <style>
-{% block style %}{% endblock style %}
+
 </style>
 <body>
 
-  <div class="header" 
-  style="background: url('../static/img/hero.jpeg') no-repeat; background-size: cover;
-  {% if 'appointment' in request.path %}
-  max-height:10px!important;min-height:10px!important;
-  {% endif %}
-  ">
+   
+    
+    <div class="header" 
+    style="background: url('../static/img/hero.jpeg') no-repeat; background-size: cover;
+    {% if 'appointment' in request.path %}
+    max-height:10px!important;min-height:10px!important;
+    {% endif %}
+    ">
+  
+
+  
     
     <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
         <div class="container"><a class="navbar-brand" href="{% url 'home' %}">Hounds Hotel</a>
@@ -76,7 +81,7 @@
   <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/all.min.js' %}"></script>
  <script>
-    {% block script %}{% endblock script %}
+   
  </script>
 </body>
 
