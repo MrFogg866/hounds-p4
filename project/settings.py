@@ -2,6 +2,10 @@
 from pathlib import Path
 from decouple import config 
 
+import cloudinary 
+import cloudinary.uploader
+import cloudinary.api 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -15,7 +19,7 @@ SECRET_KEY = config("SK")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hounds_hotel.heroku.com', 'localhost']
 
 
 # Application definition
@@ -65,12 +69,19 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+
+
+if 'DATABASE_URL' in os.environ:
+   DATABASES = {
+      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+   }
+else:
+   DATABASES = {
+      'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+      }
+   }
 
 
 # Password validation
@@ -113,7 +124,14 @@ STATIC_URL = '/static/'
 if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / "static"]
 else:
-    STATIC_ROOT = BASE_DIR / "static"    
+    STATIC_ROOT = BASE_DIR / "static"   
+
+cloudinary.config(
+
+    cloud_name = "dp1msqpei",
+    api_key = "238445858734859",
+    api_secret = "tpVwhIlIS8ZCJqfr1BAchmDUQGU"
+)     
 
 
 # Default primary key field type
@@ -123,8 +141,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Sending emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = config("YOUR_EMAIL")
-EMAIL_HOST_PASSWORD = config("YOUR_PASSWORD")
+EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config("EADDRESS")
+EMAIL_HOST_PASSWORD = config("EPASSWORD")

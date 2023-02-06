@@ -178,17 +178,17 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 #### Wireframes
 
-[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements in the pages.
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
-Home Page | ![Desktop Home](static/img/WF-1.png) | ![Mobile Home](assets//)
-Our Team | ![Desktop Team](static/img/WF-2.png) | ![Mobile Team](assets/)
-Services| ![Desktop Services](static/img/WF-3.png) | ![Mobile Services](assets)
-Testimonies | ![Desktop Testimonies](static/img/WF-4.png) | ![Mobile Testimonies](assets)
-Contact Us | ![Desktop Contact Us](static/img/WF-5.png) | ![Mobile ](as)
-Open Question | ![Desktop ](assets/wirefra) | ![Mobile opee](assets/wirefrang)
-Leave Reply | ![Desktop leae](assets/wirefrg) | ![Mobile leavage](assets/wobile.png)
+Home Page | ![Desktop Home](static/img/WF-1.png) | ![Mobile Home](static/img/MOB-1.png)
+Our Team | ![Desktop Team](static/img/WF-2.png) | ![Mobile Team](static/img/MOB-2.png)
+Services| ![Desktop Services](static/img/WF-3.png) | ![Mobile Services](static/img/MOB-3.png)
+Testimonies | ![Desktop Testimonies](static/img/WF-4.png) | ![Mobile Testimonies](static/img/MOB-4.png)
+Contact Us | ![Desktop Contact Us](static/img/WF-5.png) | ![Mobile ](static/img/MOB-5.png)
+
+
 
 
 ### Surface
@@ -219,7 +219,7 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 * Responsive design across all device sizes.
 
 * Navigation Bar
-![ Navigation Bar image](assets/readme_files/_navbar.png)
+![ Navigation Bar image](static/img/nav.png)
 
     *  Contains the main logo and section links.
 
