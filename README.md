@@ -58,9 +58,8 @@ Visit the deployed website [here](https://.com).
 
 * Structure is easy to understand and navigates effortlessly.
 
-* Site users are able to open an account in order to make a booking.
 
-* Site users are able to create an account and make a booking.
+* Site users are able to fill out a form and make a booking request.
 
 
 #### User Goals
@@ -71,105 +70,19 @@ Visit the deployed website [here](https://.com).
 
 * As a Site User, I want the information to be easy to find and read.
 
-* As a Dog Parent, I want to be able to create an account.
-
-* As a Dog Parent, I want to be able to Sign in using User Name & Password.
-
-* As a Dog Parent, I can update my account information.
 
 * As a Dog Parent, I want the information to be easy to find and read.
 
-* As a Dog Parent, I want to be able to make a booking for my dog.
-
-
-#### Strategy Table
-
-Opportunity / Problem   Importance  Viability / Feasibility
---- | --- | ---
-Responsive design   | 5 | 5
-Account Creation    | 5 | 5
-Ability to sign-in  | 5 | 5
-Create, edit and delete personal info | 5 |4
-Create, edit and delete booking | 5 | 4
-Ability to search for information | 5 | 3
-Social Media Icons | 3 | 5
-        
-**Total** | **33**  |  **28**
+* As a Dog Parent, I want to be able to make a booking request for my dog.
 
 
 
-### Scope
-
-According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases. The first phase will include the features that have been identified in order to build the minimum viable product.
-
-**First Phase**
-
-* Responsive design
-
-* Menu 
-
-* Account registration
-
-* Booking Form
-
-* 
-
-* 
-
-**Second Phase**
-
-* Ability to add reviews 
-
-* Social media signup
-
-* Extra Services, Grooming, extra playtime, Treats, Massages
-
-
-#### User Stories
-
-GitHub projects was used as my project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project progress.
-
-**Start**
-![User Stories Progress - Start](assets/)
-
-**Week 1**
-![User Stories Progress - Week 1](assets/)
-
-**Week 2**
-![User Stories Progress - Week 2](assets/)
-
-**Week 3**
-![User Stories Progress - Week 3](assets/)
-
-
-### Structure
-
-The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
-
-![website map](assets/)
-
-* Header, footer and navigation bar are consistent through all pages.
-
-* Links and forms provide clear feedback to the site user.
-
-* The opportunity to add additional content to the website is provided for the site user once they register an account.
-
-* A 404-error page is available.
-
-
-#### Database Model
-
-The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using [PostgreSQL](https://www.postgresql.org/).
-
-![website map](assets/)
-
-**Question Model**
 
 
 
-**Reply Model**
 
-* 
+
+
 
 
 
@@ -235,9 +148,6 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 
 ### Home Page
 
-* Question list
-
-
 
 ### Our Team
 
@@ -276,12 +186,6 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 
 
 ### Authentication Pages
-
-Page | Purpose | Image |
---- | --- | --- |
-Register | Allow the Site User to sign up an account for the website. | ![ Sign Up Page](assets/readme_files/co_sing_up.png) |
-Login | Allow the Site User to sign in with their account. | ![ Sign In Page](assets/readme_files/_sign_in.png) |
-Logout | Allow the Site User to sign out from their account. | ![ Sign Out Page](assets/readgn_out.png) |
 
 
 [Back to top ⇧](#hounds-hotel)
@@ -329,8 +233,6 @@ Logout | Allow the Site User to sign out from their account. | ![ Sign Out Page]
 * [Gunicorn](https://gunicorn.org/)  
     * Gunicorn was used as Python WSGI HTTP Server for UNIX to support the deployment of Django application.  
 
-* [Summernote](https://summernote.org/) 
-    * Summernote has been used as WYSIWYG editor.
 
 * [Cloudinary](https://cloudinary.com/)
     * Cloudinary has been used as image management solution
