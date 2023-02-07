@@ -154,7 +154,4 @@ EMAIL_HOST_PASSWORD = config("EPASSWORD")
 
 #Static root
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
 django_heroku.settings(locals())
