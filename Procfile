@@ -1,1 +1,1 @@
-web gunicorn hounds-hotel.wsgi:application --log-file -
+web gunicorn project.wsgi:application --log-file -
