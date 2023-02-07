@@ -7,7 +7,7 @@ import cloudinary.uploader
 import cloudinary.api 
 
 import os
-import django_herouk
+import django_on_heroku
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -154,4 +154,8 @@ EMAIL_HOST_PASSWORD = config("EPASSWORD")
 
 #Static root
 
-django_heroku.settings(locals())
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+
+django_on_heroku.settings(locals())
+
