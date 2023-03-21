@@ -21,8 +21,7 @@
 
    
     
-    <div class="header" 
-    style="background: url('../static/img/hero.jpeg') no-repeat; background-size: cover;
+    <div class="header" style="background: url('{% static 'img/hero.jpeg' %}') no-repeat; background-size: cover;
     {% if 'appointment' in request.path %}
     max-height:10px!important;min-height:10px!important;
     {% endif %}
