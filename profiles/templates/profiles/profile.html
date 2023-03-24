@@ -1,5 +1,66 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ user.username }}</h1>
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header bg-primary text-white">{{ user.username }}</div>
+        <div class="card-body">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h3>User Details</h3>
+              <div class="card">
+                <div class="card-body">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Username:</th>
+                        <td>{{ user.username }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">First Name:</th>
+                        <td>{{ user.first_name }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Last Name:</th>
+                        <td>{{ user.last_name }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Email:</th>
+                        <td>{{ user.email }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bio:</th>
+                        <td>{{ user.profile.bio }}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Location:</th>
+                        <td>{{ user.profile.location }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary"
+                  onclick="location.href='{% url 'profiles:change_password' %}'">Change
+                  Password</button>
+                <button type="button" class="btn btn-primary"
+                  onclick="location.href='{% url 'profiles:update_profile' pk=user.profile.pk %}'">Update
+                  Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          {% if user.is_staff %}
+          <a href="{% url 'profiles:admin' %}" class="btn btn-secondary">Back to Admin</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
