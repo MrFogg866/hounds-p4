@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'authorization',
     'bootstrap5',
     'profiles',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
