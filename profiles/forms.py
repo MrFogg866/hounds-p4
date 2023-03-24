@@ -4,22 +4,18 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from .models import Profile
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
+from django.utils.translation import gettext as _
 
 
 class CustomUserChangeForm(UserChangeForm):
-    password = ReadOnlyPasswordHashField(
-        label='Password',
-        help_text='Raw passwords are not stored, so there is no way to see this user’s password, but you can change the password using <a href="./password/">this form</a>.',
-    )
+    password = ReadOnlyPasswordHashField(label=_("Password"),
+        help_text=_("Raw passwords are not stored, so there is no way to see "
+                    "this user's password, but you can change the password "
+                    "using <a href=\"password/\">this form</a>."))
 
-    class Meta(UserChangeForm.Meta):
+    class Meta:
         model = Profile
-        
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Remove the password field from the form
-        del self.fields['password']
-        # Remove the username field from the form
+        fields = '_all_'
 
 
 class UpdateProfileForm(UserChangeForm):
