@@ -45,8 +45,9 @@ def change_password(request):
 
 
 @login_required
-def update_profile(request, pk):
-    profile = Profile.objects.get(pk=pk)
+def update_profile(request, username):
+    user = get_object_or_404(User, username=username)
+    profile = user.profile
     if request.method == 'POST':
         form = UpdateProfileForm(request.POST, instance=profile)
         if form.is_valid():
@@ -58,7 +59,8 @@ def update_profile(request, pk):
 
     context = {
         'form': form,
-        'user': request.user
+        'user': request.user,
+        'profile': profile,
     }
 
     return render(request, 'profiles/update_profile.html', context)

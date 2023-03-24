@@ -6,6 +6,6 @@ app_name = 'profiles'
 urlpatterns = [
     path('profile/<str:username>/', profile_view, name='profile'),
     path('change-password/', change_password, name='change_password'),
-    path('update/<int:pk>/', update_profile, name='update_profile'),
+    path('update/<str:username>/', update_profile, name='update_profile'),
     path('admin/', admin_view, name='admin'),
 ]

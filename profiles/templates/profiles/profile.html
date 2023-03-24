@@ -48,7 +48,9 @@
                   onclick="location.href='{% url 'profiles:change_password' %}'">Change
                   Password</button>
                   {% if user and user.profile %}
-                  <button type="button" class="btn btn-primary" onclick="location.href='{% url 'profiles:update_profile' pk=user.profile.pk %}'">Update Profile</button>
+                <button type="button" class="btn btn-primary"
+                  onclick="location.href='{% url 'profiles:update_profile' username=user.username %}'">Update
+                  Profile</button>
                   {% endif %}
               </div>
             </div>
