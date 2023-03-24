@@ -15,7 +15,7 @@ class CustomUserChangeForm(UserChangeForm):
 
     class Meta:
         model = Profile
-        fields = '_all_'
+        fields = '__all__'
 
 
 class UpdateProfileForm(UserChangeForm):
