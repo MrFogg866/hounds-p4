@@ -30,7 +30,7 @@
 
   
     
-   <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container"><a class="navbar-brand" href="{% url 'home' %}">Hounds Hotel</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -53,11 +53,12 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" href="{% url 'home' %}#contact">Contact Us</a>
                 </li>
-                {% if request.user.is_authenticated %}
+                {% if request.user.is_staff %}
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" href="{% url 'manage' %}">Manage</a>
                 </li>
                 {% endif %}
+                {% if user.is_staff %}
                 <li class="nav-item" role="presentation">
                     <a href="{% url 'manage' %}" style="float: left;cursor:pointer;" aria-expanded="true"
                         title="You Have 6 New Appointments">
@@ -66,6 +67,7 @@
                     </a>
                     <span class="badge badge-danger">{{count}}</span>
                 </li>
+                {% endif %}
             </ul>
             <ul class="navbar-nav ms-auto">
                 {% if user.is_staff %}
@@ -110,7 +112,7 @@
             </ul>
         </div>
     </div>
-</nav>
+  </nav>
    
    {% block cta %}{% endblock cta %}
 </div>

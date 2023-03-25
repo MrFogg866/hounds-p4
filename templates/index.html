@@ -8,7 +8,9 @@
                 <p> At Hounds Hotel
                     we combine world class facilities
                     with compassionate care for you four legged family members. </p>
+                    {% if user.is_authenticated %}
                     <a href="{% url 'appointment' %}" class="btn btn-light btn-lg action-button" type="button">Book an room</a>
+                    {% endif %}
             </div>
 
         </div>
