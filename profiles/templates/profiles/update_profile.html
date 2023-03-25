@@ -18,7 +18,10 @@
           <h2 class="text-center">Update Profile</h2>
         </div>
         <div class="card-body">
-          {% crispy form %}
+          <form method="post" class="form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% crispy form %}
+          </form>
         </div>
       </div>
     </div>
@@ -45,6 +48,56 @@
 
   .breadcrumb-link:hover {
     text-decoration: underline;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .form-row {
+    margin: 0 -5px;
+  }
+
+  .form-row .col {
+    padding: 0 5px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
   }
 </style>
 {% endblock %}

@@ -9,6 +9,8 @@ from django.contrib.auth import update_session_auth_hash
 from .forms import UpdateProfileForm, CustomUserChangeForm
 from .forms import UpdateProfileForm
 from profiles.models import Profile
+from .forms import NoteForm
+from .models import Note
 
 User = get_user_model()
 
@@ -66,5 +68,22 @@ def update_profile(request, username):
     return render(request, 'profiles/update_profile.html', context)
 
 
+def create_note(request, username):
+    user = User.objects.get(username=username)
+    if request.method == 'POST':
+        form = NoteForm(request.POST)
+        if form.is_valid():
+            note = form.save(commit=False)
+            note.user = user
+            note.save()
+            return redirect('profiles:profile', username=username)
+    else:
+        form = NoteForm()
+    return render(request, 'profiles/create_note.html', {'form': form})
 
 
+def delete_note(request, pk):
+    note = get_object_or_404(Note, pk=pk)
+    if note.user == request.user:
+        note.delete()
+    return redirect('profiles:profile', username=request.user.username)
