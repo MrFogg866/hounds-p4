@@ -24,17 +24,17 @@ class UpdateProfileForm(UserChangeForm):
     first_name = forms.CharField(
         max_length=20,
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'First Name', 'class': 'form-control'})
+        widget=forms.TextInput(attrs={'placeholder': 'Please send us an email if you would like to change the first name', 'class': 'form-control', 'readonly': True})
     )
     last_name = forms.CharField(
         max_length=20,
         required=False,
-        widget=forms.TextInput(attrs={'placeholder': 'Last Name', 'class': 'form-control'})
+        widget=forms.TextInput(attrs={'placeholder': 'Please send us an email if you would like to change the last name', 'class': 'form-control', 'readonly': True})
     )
     email = forms.EmailField(
         max_length=50,
         required=False,
-        widget=forms.EmailInput(attrs={'placeholder': 'Email', 'class': 'form-control'})
+        widget=forms.EmailInput(attrs={'placeholder': 'Please send us an email if you would like to change the email', 'class': 'form-control', 'readonly': True})
     )
     telephone = forms.CharField(
         max_length=20,

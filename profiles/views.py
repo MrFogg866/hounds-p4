@@ -38,7 +38,7 @@ def change_password(request):
             user = form.save()
             update_session_auth_hash(request, user)
             messages.success(request, 'Your password has been updated!')
-            return redirect('profiles:profile')
+            return redirect('profiles:profile', username=request.user.username)
         else:
             messages.error(request, 'Please correct the errors below.')
     else:
