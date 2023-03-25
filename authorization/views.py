@@ -23,16 +23,16 @@ def signup_view(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-            user = form.save()
+            user = form.save(commit=False)
             username = form.cleaned_data.get('username')
             first_name = form.cleaned_data.get('first_name')
             last_name = form.cleaned_data.get('last_name')
             email = form.cleaned_data.get('email')
             password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=password)
             user.first_name = first_name
             user.last_name = last_name
             user.email = email
+            user.set_password(password)
             user.save()
             login(request, user)
             return redirect('home')
