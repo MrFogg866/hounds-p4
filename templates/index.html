@@ -197,7 +197,7 @@
   
           <!-- Contact form -->
           <div class="col-xl-6 col-sm-6">
-            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            <form role="form" name="ajax-form" id="ajax-form" method="POST" class="form-main" action="{% url 'home' %}">
             {% csrf_token %}
               <div class="form-group">
                 <label for="name2">Name</label>
