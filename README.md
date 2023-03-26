@@ -8,7 +8,7 @@ Hounds Hotel is a business created to for dog owners to have a safe and homely s
 
 The main objective of the site is to provide the user with information on the services provided and enable them to make a booking.
 
-Visit the deployed website [here](https://.com).
+Visit the deployed website [here](https://hounds-hotel.herokuapp.com/)
 
 
 ## Table of Contents
@@ -21,8 +21,12 @@ Visit the deployed website [here](https://.com).
     2. [Scope](#scope)
         1. [User Stories](#user-stories)
     3. [Structure](#structure)
+        1. [Database Model](#database-model)
     4. [Skeleton](#skeleton)
+        1. [Wireframes](#wireframes)
     5. [Surface](#surface)
+        1. [Color Scheme](#color-scheme)
+        2. [Typography](#typography)
 2. [Features](#features)
     1. [General](#general)
     2. [Home Page](#home-page)
@@ -58,32 +62,143 @@ Visit the deployed website [here](https://.com).
 
 * Structure is easy to understand and navigates effortlessly.
 
+* Site user are able to sign up & sign in 
+
+* Site users can edit there personal info, but must contact admin to change there user name or email address.
 
 * Site users are able to fill out a form and make a booking request.
 
 
 #### User Goals
 
-* As a Site Admin,  .................
+**Epic 1 - Admin Experience**
 
-* As a Site User, I want to be able to interact with the content.
+* As a Site Admin,  I want to view all user accounts.
+
+* As a Site Admin,  I want to edit and delete all user accounts. 
+
+* As a Site Admin,  I want to designate staff accounts to staff members.
+
+* As a Site Admin,  I want to manage the appointment times.
+
+
+**Epic 2 - User Experience**
+
+* As a Site User, I want to be able to create a account.
+
+* As a Site User, I want to be able to edit my personal account information.
+
+* As a Site User, I want to be able to make a booking request.
+
+* As a Site User, I want to be able find the company contact information and social media.
 
 * As a Site User, I want the information to be easy to find and read.
 
 
-* As a Dog Parent, I want the information to be easy to find and read.
+**Epic 3 - Customer Experience**
 
-* As a Dog Parent, I want to be able to make a booking request for my dog.
+* As a Customer, i want to know what services are available.
+
+* As a Customer, i want to meet the staff and understand the experience they have.
+
+* As a Customer, i want to read previous customer reviews.
+
+* As a Customer, i want to send a quick message through a contact form.
+
+#### Strategy Table
+
+Opportunity / Problem | Importance | Viability / Feasibility
+--- | --- | ---
+Responsive design | 5 | 5
+Account Sign up | 5 | 5
+Edit User profile | 5 | 5
+Make a booking | 5 | 5
+Contact form | 5 | 5
+Social media links | 5 | 5
+Admin Manage bookings & edit accounts| 4 | 4
+Staff pictures and bio| 4 | 4
+Customer Reviews| 4 | 4
+**Total** | **42** | **42**
+
+
+### Scope
+
+According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases. The first phase will include the features that have been identified in order to build the minimum viable product.
+
+
+**First Phase**
+
+* Responsive design
+
+* Create, edit and delete accounts
+
+* Account registration.
+
+* Make a booking request.
+
+* Edit User profiles.
+
+* Social media links. 
+
+* Contact form. 
+
+* Reviews section carosel.
+
+**Second Phase**
+
+* Booking will be automatically confirmed.
+
+* Rtes for rooms and additional services will be shown.
+
+* Card payments will be accepted for bookings.
+
+* Sign up for newsletter.
+
+
+**Third Phase**
+
+*  3d renderings of the grounds, rooms and facilitys.
+
+*  Additional payment options.
+
+*  Loyalty scheme.
+
+#### User Stories
+
+GitHub projects was used as my project management tool to track user stories. Using a Kanban board helped to focus on specific tasks and track the project progress.
+
+**Start**
+![User Stories Progress 1](static/img/HP4-USER-STORIES-1.png)
+
+**Progress 1**
+![User Stories Progress 2](static/img/HP4-USER-STORIES-2.png)
+
+**Progress 2**
+![User Stories Progress 3](static/img/HP4-USER-STORIES-3.png)
+
+**Progress 3**
+![User Stories Progress 4](static/img/HP4-USER-STORIES-4.png)
 
 
 
+## Structure
+
+The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
+
+![Hounds website map](static/img/drwsql.png)
+
+* Header and navigation bar are consistent through all pages.
+
+* Links and forms provide clear feedback to the site user.
+
+* New additional features are provided for the user once they register an account, such as make a booking.
 
 
+#### Database Model
 
+The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [PostgreSQL](https://www.postgresql.org/).
 
-
-
-
+![Hounds Database Model](static/img/drwsql.png)
 
 
 
