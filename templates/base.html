@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{title}}</title>
+  <title>Hounds Hotel</title>
   <!-- Bootstrap core CSS -->
   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/all.min.css' %}" />
@@ -15,12 +15,11 @@
 </head>
 
 <style>
-    {% block style %}{% endblock style %}
+    {% block style %}
+    {% endblock style %}
 </style>
-<body>
 
-   
-    
+<body>
     <div class="header" style="background: url('{% static 'img/hero.jpeg' %}') no-repeat; background-size: cover;
     {% if 'appointment' in request.path %}
     max-height:10px!important;min-height:10px!important;

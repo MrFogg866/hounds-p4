@@ -39,8 +39,14 @@ Visit the deployed website [here](https://hounds-hotel.herokuapp.com/)
     4. [Database Management](#database-management)
     5. [Tools and Programs](#tools-and-programs)
 4. [Testing](#testing)
-    1. [Go to TESTING.md](https://-testing)
+    1. [HTML]
+    2. [CSS]
+    3. [PYTHON]
+    4. [JAVASCRIPT]
+    5. 
 5. [Deployment](#deployment)
+    1. [How To Use This Project](#how-to-use-this-project)  
+    2. [Deployment to Heroku](#deployment-to-heroku)  
 6. [Finished Product](#finished-product)
 7. [Credits](#credits)
 8. [Known Bugs](#known-bugs)
@@ -118,7 +124,12 @@ Social media links | 5 | 5
 Admin Manage bookings & edit accounts| 4 | 4
 Staff pictures and bio| 4 | 4
 Customer Reviews| 4 | 4
-**Total** | **42** | **42**
+Booking automatic confirmation| 3 | 4
+Multiple Payment options| 4 | 3
+Newsletter sign-up| 3 | 3 
+3d Renderings of the facilitys| 3 | 3 
+Loyalty Scheme| 3 | 4 
+**Total** | **58** | **59**
 
 
 ### Scope
@@ -183,9 +194,7 @@ GitHub projects was used as my project management tool to track user stories. Us
 
 ## Structure
 
-The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
-
-![Hounds website map](static/img/drwsql.png)
+The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. 
 
 * Header and navigation bar are consistent through all pages.
 
@@ -355,6 +364,325 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 ### Database Management
 * [Heroku Postgres](https://www.heroku.com/postgres)   
     * Heroku Postgres database was used in production, as a service based on PostgreSQL provided by Heroku.
+
+
+### Tools and Programs
+
+* [Git](https://git-scm.com)  
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub. 
+
+* [GitPod](https://gitpod.io/)
+     * GitPod was used for writing code, committing, and then pushing to GitHub.
+
+* [GitHub](https://github.com)  
+   GitHub was used to store the projects code after being pushed from Git. 
+
+* [Heroku](https://www.heroku.com)   
+    * Heroku was used to deploy the website.
+
+* [Tiny PNG](https://tinypng.com)    
+    * Tiny PNG was used to reduce the file size of the images.
+
+* [Coolors](https://coolors.co)  
+    * Coolors was used to create a color scheme for the website.
+
+* [Balsamiq](https://balsamiq.com/)
+     * Balsamiq was used to create the wireframes during the design phase of the project
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    * Chrome DevTools was used during development process for code review and to test responsiveness.
+
+* [W3C Markup Validator](https://validator.w3.org/)
+    * W3C Markup Validator was used to validate the HTML code.
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    * W3C CSS Validator was used to validate the CSS code.
+
+* [JSHint](https://jshint.com/) 
+    * The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+
+* [Favicon.io](https://favicon.io) was used to create the site favicon.
+
+
+[Back to top ⇧](#hounds)
+
+
+## Testing
+
+HTML 
+
+The testing was performed using (https://validator.w3.org/nu/) for the HTML.
+
+Numerous errors were returned when passing through the official W3C validator
+
+![HTML Error image ](assets/readme/mobile-profile.png) |
+
+And after fixing errors
+
+![HTML Errors fixed image ](assets/readme/mobile-profile.png) |
+
+
+CSS
+
+The testing was performed using (https://jigsaw.w3.org/css-validator/) for the CSS.
+
+No errors were returned when passing through the official W3C validator
+
+![CSS No errors image](static/img/css-testing.png) |
+
+
+
+PYTHON
+
+
+The testing was performed using (https://pep8ci.herokuapp.com/) for the PYTHON.
+
+![PYTHON Errors images ](static/img/PY-TEST-A.png) |
+
+![PYTHON Fixed Errors images ](static/img/PY-TEST-B.png) |
+
+
+[Back to top ⇧](#hounds)
+
+## Deployment
+ 
+The project was developed using[GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/") using the terminal. The web application is deployed on Heroku as Github Pages is not able to host a Python project.  The repository is hosted on Github.
+
+
+### How To Use This Project
+To use and further develop this project you can either fork or clone the repository.  
+
+
+#### Fork GitHub Repository
+By forking the GitHub repository you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository, by using the following steps:  
+
+1. Log in to GitHub.  
+2. Navigate to the main page of the GitHub Repository that you want to fork.  
+3. At the top right of the Repository just below your profile picture, locate the "Fork" button.  
+4. You should now have a copy of the original repository in your GitHub account.  
+5. Changes made to the forked repository can be merged with the original repository via a pull request.  
+
+
+#### Clone Github Repository
+By cloning a GitHub repository you can create a local copy on your computer of the remote repository. The developer who clones a repository can synchronize their copy of the codebase with any updates made by fellow developers with push or pull request. Cloning is done by using the following steps:  
+
+1. Log in to GitHub.  
+2. Navigate to the main page of the GitHub Repository that you want to clone.  
+3. Above the list of files, click the dropdown called "Code".  
+4. To clone the repository using HTTPS, under "HTTPS", copy the link.  
+5. Open Git Bash.  
+6. Change the current working directory to the location where you want the cloned directory to be made.  
+7. Type git clone, and then paste the URL you copied in Step 4.  
+```$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY```
+8. Press Enter. Your local clone will be created.   
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```  
+Changes made on the local machine (cloned repository) can be pushed to the upstream repository directly if you have a write access for the repository. Otherwise, the changes made in the cloned repository are first pushed to the forked repository, and then a pull request is created.  
+
+
+
+#### Project Set Up After Forking or Cloning  
+1. Install all dependencies by typing in the CLI ```pip3 install -r requirements.txt```  
+2. Create a ```.gitignore``` file and ```env.py``` file in the project's root directory. Add the ```env.py``` file to ```.gitignore```. 
+3. Inside the env.py file, enter the project's environment variables:   
+   ```
+   import os
+
+   os.environ.setdefault("SECRET_KEY", <your_secret_key>)
+   os.environ.setdefault("DEVELOPMENT", '1')
+   os.environ.setdefault("STRIPE_PUBLIC_KEY", <your_key>)
+   os.environ.setdefault("STRIPE_SECRET_KEY", <your_key>)
+   os.environ.setdefault("STRIPE_WH_SECRET", <your_key>)
+   ```   
+   You can get the keys from:
+   - "SECRET_KEY" can be generated using [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)   
+   - "STRIPE_PUBLIC_KEY" and "STRIPE_SECRET_KEY" can be generated by creating a stripe account. The keys are found in 'Developers' Section, under 'API Keys'.  
+   - In the Developer Section, under 'Webhooks', add a new endpoint.  "STRIPE_WH_SECRET". On Endpoint URL, enter:  
+   ``` https://<your_host_url>/checkout/wh/ ```   
+   Select to listen to all events, and create endpoint, and you can view your "STRIPE_WH_SECRET".   
+
+4. Make migrations to setup the inital database operations.  
+   ``` 
+   python3 manage.py makemigrations 
+   python3 manage.py migrate 
+   ```   
+5. Load data for the database or create data manually. 
+   ```
+   python3 manage.py loaddata <app_name>
+   ``` 
+6. Create a super user.
+   ```
+   python3 manage.py create superuser
+   ```  
+The project should now complete to run and can now be used for development. To run the project, type in the CLI terminal: ```python3 manage.py runserver```     
+
+
+### Deployment to Heroku 
+This project is deployed on Heroku for production, with all static and media files stored on AWS S3. These are steps to deploy on Heroku:
+
+1. Navigate to Heroku.com, create a new account or login if you already have an account. On the dashboard page, click "Create New App" button. Give the app a name, the name must be unique with hypens between words. Set the region closest to you, and click "Create App".   
+2. On the resources tab, provision a new Heroku Postgres database.  
+3. Configure variables on Heroku by navigating to Settings, and click on Reveal Config Vars. You may not have all the values yet. Add the others as you progress through the steps.   
+   Varables | Key   
+   ---| ---   
+   AWS_ACCESS_KEY_ID | your_access_key_id_from_AWS   
+   AWS_SECRET_ACCESS_KEY | your_secret_access_key_from_AWS  
+   DATABASE_URL | your_database_url   
+   EMAIL_HOST_PASS | your_app_password_from_your_email   
+   EMAIL_HOST_USER | your_email_address  
+   SECRET_KEY | your_secret_key 
+   STRIPE_PUBLIC_KEY | your_stripe_public_key  
+   STRIPE_SECRET_KEY | your_stripe_secret_key  
+   USE_AWS | True 
+
+4. If you haven't install it, install dj_database_url and psycopg2.
+   ```
+   pip3 install dj_database_url
+   pip3 install psycopg2-binary
+   ```
+   Note: you don't have to do this if you've installed all dependencies in the requirements.txt file.  
+5. Set up a new database for the site by going to the project's settings.py and importing dj_database_url. Comment out the database's default configuration, and replace the default database with a call to dj_database_url.parse and pass it the database URL from Heroku (you can get it from your config variables in your app setting tab)
+   ```
+   DATABASES = {
+     'default': dj_database_url.parse('YOUR_DATABASE_URL_FROM_HEROKU')
+   }
+   ```
+6. Run migrations
+   ```
+   python3 manage.py migrate
+   ```  
+7. Import data to the database.
+    - Make sure your manage.py file is connected to your sqlite3 database.
+    - Use this command to backup your current database and load it into a db.json file:
+    ```
+    ./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json
+    ```
+    - Connect your manage.py file to your postgres database
+    - Then use this command to load your data from the db.json file into postgres:
+    ``` 
+    ./manage.py loaddata db.json
+    ``` 
+8. Set up a new superuser, fill out the username, email address, and password.
+   ```
+   python3 manage.py create superuser
+   ```  
+9. Remove the database config from Heroku and uncomment the original config. Add a conditional statement to define that when the app is running on Heroku. we connect to Postgres, and otherwise, we connect to Sqlite.   
+   ```
+   if 'DATABASE_URL' in os.environ:
+      DATABASES = {
+         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+      }
+   else:
+      DATABASES = {
+         'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+         }
+      }
+   ```  
+10. Install gunicorn which will act as the webserver, and put it on the requirements.txt.   
+   ``` 
+   pip3 install gunicorn
+   pip3 freeze > requirements.txt
+   ```
+   Note: you don't have to do this if you've installed all dependencies in the requirements.txt file.
+11. Create a Procfile, to tell Heroku to create a web dyno, which will run unicorn and serve the Django app.   
+
+   Inside the Procfile:
+   ```
+   web: gunicorn shoes_and_more.wsgi:application
+   ```
+12. Login to Heroku through CLI, using ```heroku login```. Once logged in, disable the collect static temporarily, so that Heroku won't try to collect static files when it deploys.
+   ```
+   heroku config:set DISABLE_COLLECTSTATIC=1 --app shoes-and-more
+   ```
+   And add the hostname of the Heroku app to allowed hosts in the project's settings.py, and also add localhost so that Gitpod will still work as well:  
+   ```
+   ALLOWED_HOSTS = ['hound-hotel.herokuapp.com', 'localhost']
+   ```   
+13. Add, commit, and push to gitpod and then to Heroku. After pushing to gitpod as usual, initialize git remote first:
+   ```
+   heroku git:remote -a hounds-hotel
+   ``` 
+   Then push to Heroku:
+   ```
+   git push heroku main
+   ```
+14. Go to the app's dashboard on Heroku and go to Deploy. Connect the app to Github by clicking Github and search for the repository. Click connect. Also enable the automatic deploy by clicking Enable Automatic Deploys, so that everytime we push to github, the code will automatically be deployed to Heroku as well.  
+15. Go back to settings.py and replace the secret key setting with the call to get it from the environment, and use empty string as a default. 
+   ```
+   SECRET_KEY = os.environ.get('SECRET_KEY', '')
+   ```
+   Set debug to be true only if there's a variable called development in the environment.
+   ```
+   DEBUG = 'DEVELOPMENT' in os.environ
+   ```
+  
+## Finished Product
+
+Page | Desktop | Mobile |
+--- | --- | --- |
+| Home | ![Desktop Home Page image](static/img/desktop-home.png) | ![Mobile Home Page image ](static/img/mobile-home.png) |
+| Sign-up | ![Desktop signup Page image](static/img/desktop-sign-up.png) | ![Mobile sign-up Page image ](static/img/mobile-sign-up.png) |
+| Make-booking | ![Desktop booking Details Page image](static/img/desktop-booking.png) | ![Mobile booking Details Page image ](static/img/mobile-booking.png) |
+| Profile | ![Desktop Profile Page image](static/img/desktop-profile.png) | ![Mobile Profile Page image ](static/img/mobile-profile.png) |
+| Staff| ![Desktop Staff Page image](static/img/desktop-staff.png) | ![Mobile Staff Page image ](static/img/mobile-staff.png) |
+| Reviews | ![Desktop Reviews Page image](static/img/desktop-reviews.png) | ![Mobile Reviews Page image ](static/img/mobile-reviews.png) |
+| Contact form | ![Desktop Contact-form Page image](static/img/desktop-contact.png) | ![Mobile Contact-form Page image ](static/img/mobile-contact.png) |
+
+
+## Credits
+
+
+### Content
+
+
+
+
+
+* All other content was written by the developer.
+
+
+### Media
+
+
+
+### Code
+
+* The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database.
+
+
+## Known Bugs
+
+**Hamburger mobile version menu on booking page**
+
+* The menu options are not legible due to font colour and positioning
+
+
+
+
+
+**Responsiveness in product quantity form on shopping bag**
+
+
+
+
+[Back to top ⇧](#hounds)
+
+## Acknowledgements
+
+
+* My tutor, Marcel, for his invaluable support, feedback and guidance through the whole process.
+
+* Code Institute and it's amazing Slack community for their support and providing me with the necessary knowledge to complete this project.
+
+[Back to top ⇧](#hounds)
 
 
 
