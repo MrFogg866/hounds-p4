@@ -415,7 +415,16 @@ The testing was performed using (https://validator.w3.org/nu/) for the HTML.
 
 Numerous errors were returned when passing through the official W3C validator
 
-![HTML Error image ](assets/readme/mobile-profile.png) |
+![HTML Error image ](assets/readme/error.html1.png) |
+
+Once those where cleared a new set of errors appeared.
+
+![HTML Error image ](assets/readme/error.html.png) |
+
+Got these clear 
+
+![HTML Error image ](assets/readme/error.html.png) |
+
 
 And after fixing errors
 
