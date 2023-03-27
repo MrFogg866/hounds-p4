@@ -415,20 +415,16 @@ The testing was performed using (https://validator.w3.org/nu/) for the HTML.
 
 Numerous errors were returned when passing through the official W3C validator
 
-![HTML Error image ](assets/readme/error.html1.png) |
+![HTML Error image ](static/img/error-html1.png) |
 
 Once those where cleared a new set of errors appeared.
 
-![HTML Error image ](assets/readme/error.html.png) |
-
-Got these clear 
-
-![HTML Error image ](assets/readme/error.html.png) |
+![HTML Error image ](static/img/error-html.png) |
 
 
-And after fixing errors
+And after fixing errors, just a few warnings remain.
 
-![HTML Errors fixed image ](assets/readme/mobile-profile.png) |
+![HTML Errors fixed image ](static/img/error-removed.png) |
 
 
 CSS
