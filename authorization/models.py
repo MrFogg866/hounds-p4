@@ -1,8 +1,9 @@
+from django.core.exceptions import ValidationError
+from django.contrib.auth.backends import BaseBackend
 from django.utils import timezone
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, Group, Permission
-from django.contrib.auth.backends import BaseBackend
-from django.core.exceptions import ValidationError
+
 
 
 class CustomUserManager(BaseUserManager):
@@ -37,7 +38,7 @@ class CustomUser(AbstractBaseUser):
     user_permissions = models.ManyToManyField(Permission, blank=True, related_name="users")
 
     USERNAME_FIELD = 'email'
-    
+
     objects = CustomUserManager()
 
     def __str__(self):

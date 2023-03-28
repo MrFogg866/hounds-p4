@@ -31,26 +31,23 @@ Visit the deployed website [here](https://hounds-hotel.herokuapp.com/)
     1. [General](#general)
     2. [Home Page](#home-page)
     3. [About Page](#about-page)
-    12. [Authentication Pages](#authentication-pages)
-3. [Technologies Used](#technologies-used)
+    12. [technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#languages-and-frameworks)
     3. [Packages / Dependecies Installed](#packages--dependecies-installed)
     4. [Database Management](#database-management)
     5. [Tools and Programs](#tools-and-programs)
 4. [Testing](#testing)
-    1. [HTML]
-    2. [CSS]
-    3. [PYTHON]
-    4. [JAVASCRIPT]
-    5. 
+    1. [HTML](#html)
+    2. [CSS](#css)
+    3. [PYTHON](#python)
+    4. [JAVASCRIPT](#javascript)
 5. [Deployment](#deployment)
     1. [How To Use This Project](#how-to-use-this-project)  
     2. [Deployment to Heroku](#deployment-to-heroku)  
 6. [Finished Product](#finished-product)
-7. [Credits](#credits)
-8. [Known Bugs](#known-bugs)
-9. [Acknowledgements](#acknowledgements)
+7. [Known Bugs](#known-bugs)
+7. [Acknowledgements](#acknowledgements)
 
 
 ***
@@ -342,9 +339,6 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 * [Font Awesome](https://fontawesome.com)  
     * Font Awesome was used throughout the website to add icons for aesthetic and UX purposes. 
 
-* [jQuery 3.6.0](https://jquery.com/)  
-    * jQuery was used as a JavaScript library to help writing less JavaScript code.  
-
 
 ### Packages / Dependecies Installed
 
@@ -409,7 +403,7 @@ Source Sans Pro  was chosen after some research on fonts that are better for rea
 
 ## Testing
 
-HTML 
+## HTML 
 
 The testing was performed using (https://validator.w3.org/nu/) for the HTML.
 
@@ -427,7 +421,7 @@ And after fixing errors, just a few warnings remain.
 ![HTML Errors fixed image ](static/img/error-removed.png) |
 
 
-CSS
+## CSS
 
 The testing was performed using (https://jigsaw.w3.org/css-validator/) for the CSS.
 
@@ -437,7 +431,7 @@ No errors were returned when passing through the official W3C validator
 
 
 
-PYTHON
+## PYTHON
 
 
 The testing was performed using (https://pep8ci.herokuapp.com/) for the PYTHON.
@@ -445,6 +439,19 @@ The testing was performed using (https://pep8ci.herokuapp.com/) for the PYTHON.
 ![PYTHON Errors images ](static/img/PY-TEST-A.png) |
 
 ![PYTHON Fixed Errors images ](static/img/PY-TEST-B.png) |
+
+I ran into a few error with the pylint software
+
+![PYTHON Errors images ](static/img/py-test-c.png) |
+
+![PYTHON Fixed Errors images ](static/img/py-test-d.png) |
+
+![PYTHON Errors images ](static/img/py-test-e.png) |
+
+![PYTHON Fixed Errors images ](static/img/py-test-f.png) |
+
+
+## JAVASCRIPT
 
 
 [Back to top ⇧](#hounds)
@@ -642,26 +649,6 @@ Page | Desktop | Mobile |
 | Contact form | ![Desktop Contact-form Page image](static/img/desktop-contact.png) | ![Mobile Contact-form Page image ](static/img/mobile-contact.png) |
 
 
-## Credits
-
-
-### Content
-
-
-
-
-
-* All other content was written by the developer.
-
-
-### Media
-
-
-
-### Code
-
-* The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database.
-
 
 ## Known Bugs
 
@@ -669,23 +656,15 @@ Page | Desktop | Mobile |
 
 * The menu options are not legible due to font colour and positioning
 
-
-
-
-
-**Responsiveness in product quantity form on shopping bag**
-
-
-
-
 [Back to top ⇧](#hounds)
 
 ## Acknowledgements
 
+* The code in Code Institute's video on the i think therefore i blog  was used as the main reference point to set up this project using HTML, CSS, JS, Python+Django, PostgreSQL database.
 
 * My tutor, Marcel, for his invaluable support, feedback and guidance through the whole process.
 
-* Code Institute and it's amazing Slack community for their support and providing me with the necessary knowledge to complete this project.
+* The amazing Slack community for their support and providing me with the necessary knowledge to complete this project.
 
 [Back to top ⇧](#hounds)
 
