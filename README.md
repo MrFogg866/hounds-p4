@@ -453,7 +453,7 @@ I ran into a few error with the pylint software
 
 ## JAVASCRIPT
 
-
+Testing was complete using [jshint](https://jshint.com/) with no major errors found.
 [Back to top ⇧](#hounds)
 
 ## Deployment
